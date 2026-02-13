@@ -34,12 +34,23 @@ pnpm add --save-dev nodemon rimraf typescript ts-node
 ```
 
 3. Generamos nuestro archivo nodemon.json:
+- 3.1 Para npm: 
 ```
 {
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
   "exec": "npx ts-node ./src/app.ts"
+}
+```
+
+- 3.2 para pnpm:
+```
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "ignore": [],
+  "exec": "pnpm exec ts-node ./src/app.ts"
 }
 ```
 
