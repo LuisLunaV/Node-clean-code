@@ -1,3 +1,8 @@
+## Instalar dependencias de desarrollo
+```
+npm i --save-dev nodemon rimraf typescript ts-node
+
+```
 ## Proyecto de Arquitectura Limpia con NodeJS
 
 ### Instalación
